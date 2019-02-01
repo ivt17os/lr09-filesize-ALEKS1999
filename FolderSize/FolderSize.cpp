@@ -1,6 +1,7 @@
 // КЫЧКИН АЛЕКСЕЙ ИВНАНОВИЧ
 
 #include <windows.h>
+#include <iostream>
 #include <stdio.h>
 #include <TCHAR.h>
 #pragma warning( disable : 4996)
@@ -28,7 +29,7 @@ void dfs() {
         // 	здесь будет обход в глубину
         // }
         // else {// это файл
-        // size+=res....
+		size+=res.nFileSizeLow;
         // }
     } while (FindNextFile(hFind, &res) != 0);
     FindClose(hFind);
